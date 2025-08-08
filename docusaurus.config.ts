@@ -15,7 +15,7 @@ const config: Config = {
   url: 'https://xiaoya-yaya.github.io',
   baseUrl: `${GITHUB_PAGES_URL_PATH}/${process.env.PULL_NUM ? `pull_${process.env.PULL_NUM}/` : ''}`,
   organizationName: 'xiaoya-yaya',
-  projectName: 'ant-ospo-insights',
+  projectName: 'open-source-insight',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   onBrokenLinks: 'throw',
