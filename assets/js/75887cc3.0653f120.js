@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkant_open_source=self.webpackChunkant_open_source||[]).push([[8699],{23434:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/ant-ospo-insights/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"\u535a\u5ba2","blogTitle":"\u535a\u5ba2"}}')}}]);
