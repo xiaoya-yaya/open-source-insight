@@ -147,7 +147,7 @@ const ProductHuntProjectCard = ({ project, onClick }: { project: Project; onClic
     <div className={styles.phProjectCard} onClick={() => onClick(project)}>
       <div className={styles.phProjectHeader}>
         <img
-          src={orgName ? `https:/github.com/${orgName}.png` : "https://github.com/github.png"}
+          src={orgName ? `https://github.com/${orgName}.png` : "https://github.com/github.png"}
           alt={`${projectName} logo`}
           className={styles.phProjectLogo}
           onError={(e) => {
