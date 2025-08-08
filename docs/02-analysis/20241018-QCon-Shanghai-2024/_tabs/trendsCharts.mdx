@@ -1,0 +1,35 @@
+import YayaChart from '@site/src/components/YayaChart';
+import AgentOpenRankTrendsLineChart from '../_charts/AgentFrameworkTrendsLineChart';
+import InferenceOpenRankTrendsLineChart from '../_charts/DeployInferenceTrendsLineChart';
+import RayProjectOpenRankTrendsLineChart from '../_charts/DistributedComputeTrendsLineChart';
+import IDEOpenRankTrendsLineChart from '../_charts/IDEOpenRankTrendsLineChart';
+import LLMDistributedTrainingLineChart from '../_charts/LLMDistributedTrainingLineChart';
+import TrainingFrameworksOpenRankDecadeTrendsBumpChart from '../_charts/TrainingFrameworksTrendsBumpChart';
+import TrainingFrameworksOpenRankDecadeTrendsLineChart from '../_charts/TrainingFrameworksTrendsLineChart';
+import VectorDataEngineStorageLineChart from '../_charts/VectorDataEngineStorageLineChart';
+
+找到生态位只是一个开始，我们还想看看生态上在发生着什么，有什么趋势。从这些趋势图上，可以看出：
+- 训练框架：PyTorch 一家独大，在它的生态位毋庸置疑是独一档的选择。（One more thing, 最近一段 Tensorflow 有个起死回生的趋势，有没有懂的朋友告诉我发生了什么）
+- 推理引擎：各大引擎几乎都是从 2023 年 3/4 月间开始的，vLLM 是其中最热门、趋势最好的项目，llama.cpp 势头有所回落，而新近的 sglang 的发展势头也很好，似乎有希望脱颖而出，这个领域看起来有一战之力。当然，vllm 仍然是入局者要来比较的对象；
+- 此外，如上文所说，过滤掉 vscode 之外，可以看到 IDE 开发工具相关的项目同样有很多异动，尤其是 cursor，快速崛起，“有灵魂的工具”让个人开发变成一种协作，确实非常有吸引力；
+
+<YayaChart
+    title="传统机器学习训练框架的十年发展趋势"
+    chart={<TrainingFrameworksOpenRankDecadeTrendsLineChart />}
+/>
+<YayaChart
+    title="面向大模型的大规模分布式训练框架"
+    chart={<LLMDistributedTrainingLineChart />}
+/>
+<YayaChart title="大规模分布式计算引擎" chart={<RayProjectOpenRankTrendsLineChart />} />
+<YayaChart title="部署推理服务引擎" chart={<InferenceOpenRankTrendsLineChart />} />
+<YayaChart title="Agent 应用编排框架" chart={<AgentOpenRankTrendsLineChart />} />
+<YayaChart title="向量数据执行与存储" chart={<VectorDataEngineStorageLineChart />} />
+<YayaChart
+    title="传统 IDE 与 AI 交互式生成工具"
+    chart={<IDEOpenRankTrendsLineChart />}
+/>
+{/* <YayaChart
+  title="传统机器学习训练框架的十年发展趋势（凹凸图）"
+  chart={<TrainingFrameworksOpenRankDecadeTrendsBumpChart />}
+/> */}

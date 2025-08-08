@@ -1,0 +1,99 @@
+{
+  "title": {
+    "text": "LLM Agent 框架星标数增长对比",
+    "left": "center",
+    "textStyle": {
+      "fontSize": 18,
+      "fontWeight": "bold"
+    }
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "legend": {
+    "data": [
+      "2023年",
+      "2024年",
+      "2025年Q1"
+    ],
+    "top": 25
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "top": "15%",
+    "containLabel": true
+  },
+  "xAxis": {
+    "type": "value",
+    "name": "星标数",
+    "nameLocation": "middle",
+    "nameGap": 30
+  },
+  "yAxis": {
+    "type": "category",
+    "data": [
+      "Significant-Gravitas/AutoGPT",
+      "langchain-ai/langchain",
+      "langgenius/dify",
+      "geekan/MetaGPT",
+      "run-llama/llama_index",
+      "infiniflow/ragflow",
+      "crewAIInc/crewAI",
+      "microsoft/autogen",
+      "n8n-io/n8n",
+      "FlowiseAI/Flowise",
+      "openai/openai-agents-python",
+      "microsoft/semantic-kernel",
+      "deepset-ai/haystack",
+      "eosphoros-ai/DB-GPT",
+      "langchain-ai/langgraph",
+      "camel-ai/camel"
+    ],
+    "axisLabel": {
+      "fontSize": 10
+    }
+  },
+  "series": [
+    {
+      "name": "2023年",
+      "type": "bar",
+      "data": [150024, 68533, 13180, 31779, 24438, 0, 911, 18369, 9278, 18177, 0, 15184, 5637, 8575, 78, 3835],
+      "itemStyle": {
+        "color": "#5470C6"
+      },
+      "label": {
+        "show": true,
+        "position": "right"
+      }
+    },
+    {
+      "name": "2024年",
+      "type": "bar",
+      "data": [18378, 26776, 42915, 13630, 11899, 25842, 21680, 17179, 17056, 13901, 0, 7034, 6134, 5173, 7246, 1971],
+      "itemStyle": {
+        "color": "#91CC75"
+      },
+      "label": {
+        "show": true,
+        "position": "right"
+      }
+    },
+    {
+      "name": "2025年Q1",
+      "type": "bar",
+      "data": [4883, 7851, 30116, 8524, 2795, 19710, 5713, 5706, 18746, 3537, 7120, 1350, 1664, 1701, 3068, 4990],
+      "itemStyle": {
+        "color": "#FAC858"
+      },
+      "label": {
+        "show": true,
+        "position": "right"
+      }
+    }
+  ]
+}

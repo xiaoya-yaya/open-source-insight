@@ -1,0 +1,314 @@
+repository, subfield, field,openrank_2022,openrank_2023,openrank_2024
+postgres/postgres,Relational DBMS,STORAGE SYSTEMS,34.03,45.46,48.72
+mysql/mysql-server,Relational DBMS,STORAGE SYSTEMS,31.5,39.44,43.92
+MariaDB/server,Relational DBMS,STORAGE SYSTEMS,508.11,548.37,676.96
+supabase/supabase,Relational DBMS,STORAGE SYSTEMS,1380.53,2229.86,2051.59
+sqlite/sqlite,Relational DBMS,STORAGE SYSTEMS,0.94,3.61,3.27
+citusdata/citus,Distributed SQL DBMS,STORAGE SYSTEMS,535.51,529.48,220.33
+cockroachdb/cockroach,Distributed SQL DBMS,STORAGE SYSTEMS,3261.94,3171.18,2073.49
+yugabyte/yugabyte-db,Distributed SQL DBMS,STORAGE SYSTEMS,2010.61,2132.03,1575.01
+pingcap/tidb,Distributed SQL DBMS,STORAGE SYSTEMS,2056.54,1994.36,1562.03
+oceanbase/oceanbase,Distributed SQL DBMS,STORAGE SYSTEMS,265.1,302.94,184.57
+apache/shardingsphere,Distributed SQL DBMS,STORAGE SYSTEMS,1735.15,1428.65,880.61
+neondatabase/neon,Distributed SQL DBMS,STORAGE SYSTEMS,601.2,829.7,859.29
+crate/crate,Distributed SQL DBMS,STORAGE SYSTEMS,391.23,471.64,443.35
+redis/redis,Cache Store,STORAGE SYSTEMS,970.97,825.12,433.47
+memcached/memcached,Cache Store,STORAGE SYSTEMS,78.55,71.11,44.69
+dragonflydb/dragonfly,Cache Store,STORAGE SYSTEMS,146.21,450.5,431.62
+apache/ignite,In-memory SQL Database,STORAGE SYSTEMS,434.57,369.44,265.04
+readysettech/readyset,In-memory SQL Database,STORAGE SYSTEMS,7.76,134.45,184.07
+voltdb/voltdb,In-memory SQL Database,STORAGE SYSTEMS,,,
+mongodb/mongo,Document Store,STORAGE SYSTEMS,45.45,46.11,6.83
+ravendb/ravendb,Document Store,STORAGE SYSTEMS,672.84,861.75,629.75
+rethinkdb/rethinkdb,Document Store,STORAGE SYSTEMS,40.84,26,10.33
+apache/couchdb,Document Store,STORAGE SYSTEMS,221.1,287.2,186.55
+couchbase,Document Store,STORAGE SYSTEMS,,,
+FerretDB/FerretDB,Document Store,STORAGE SYSTEMS,174.04,356.72,212.26
+typicode/lowdb,Document Store,STORAGE SYSTEMS,20.32,16.26,5.82
+orientechnologies/orientdb,NoSQL Multi-model,STORAGE SYSTEMS,79.57,62.82,51.2
+arangodb/arangodb,NoSQL Multi-model,STORAGE SYSTEMS,867.01,837.44,451.1
+surrealdb/surrealdb,NoSQL Multi-model,STORAGE SYSTEMS,206.88,535.44,649.1
+edgedb/edgedb,NoSQL Multi-model,STORAGE SYSTEMS,388.65,501.16,406.62
+neo4j/neo4j,Graph Database,STORAGE SYSTEMS,115.75,190.95,99.33
+JanusGraph/janusgraph,Graph Database,STORAGE SYSTEMS,122.52,149.8,122.23
+apache/incubator-hugegraph,Graph Database,STORAGE SYSTEMS,155.12,172.85,148.08
+vesoft-inc/nebula,Graph Database,STORAGE SYSTEMS,577.82,363.26,83.93
+cayleygraph/cayley,Graph Database,STORAGE SYSTEMS,5.65,4.63,0.27
+dgraph-io/dgraph,Graph Database,STORAGE SYSTEMS,88.98,239.94,73.87
+basho/riak,Distributed Key-value Store,STORAGE SYSTEMS,19.71,14.7,1.23
+apple/foundationdb,Distributed Key-value Store,STORAGE SYSTEMS,1342.07,1115.25,452.9
+etcd-io/etcd,Distributed Key-value Store,STORAGE SYSTEMS,563.67,568.81,441.4
+tikv/tikv,Distributed Key-value Store,STORAGE SYSTEMS,706.54,511.16,375.39
+codenotary/immudb,Distributed Key-value Store,STORAGE SYSTEMS,157.9,139.38,38.39
+valkey-io/valkey,Distributed Key-value Store,STORAGE SYSTEMS,,,444.87
+apache/cassandra,Wide-column Key-value Store,STORAGE SYSTEMS,503.86,626.34,454.62
+apache/hbase,Wide-column Key-value Store,STORAGE SYSTEMS,682.3,550.14,540.5
+scylladb/scylladb,Wide-column Key-value Store,STORAGE SYSTEMS,1180.91,1475.74,1384.28
+apache/accumulo,Wide-column Key-value Store,STORAGE SYSTEMS,265.28,283.09,253.8
+google/leveldb,Embedded Key-value Store,STORAGE SYSTEMS,42.87,27.34,15.62
+facebook/rocksdb,Embedded Key-value Store,STORAGE SYSTEMS,777.78,555.06,461.22
+facebook/mysql-5.6,Embedded Key-value Store,STORAGE SYSTEMS,17.59,78.04,53.13
+dgraph-io/badger,Embedded Key-value Store,STORAGE SYSTEMS,25.62,76.2,29.44
+apache/solr,Search Engine,STORAGE SYSTEMS,478.87,554.82,478.57
+elastic/elasticsearch,Search Engine,STORAGE SYSTEMS,3132.26,3106.35,3184.91
+sphinxsearch/sphinx,Search Engine,STORAGE SYSTEMS,,0.07,
+meilisearch/meilisearch,Search Engine,STORAGE SYSTEMS,261.6,342.57,231.88
+opensearch-project/OpenSearch,Search Engine,STORAGE SYSTEMS,976.33,1606.18,1596.16
+quickwit-oss/quickwit,Search Engine,STORAGE SYSTEMS,301.46,351.19,296.75
+paradedb/paradedb,Search Engine,STORAGE SYSTEMS,,50,237.72
+risingwavelabs/risingwave,Streaming Database,STORAGE SYSTEMS,898.65,1505.66,1028.96
+MaterializeInc/materialize,Streaming Database,STORAGE SYSTEMS,1226.88,1470.66,1019.87
+EventStore/EventStore,Streaming Database,STORAGE SYSTEMS,203.52,264.91,235.72
+confluentinc/ksql,Streaming Database,STORAGE SYSTEMS,729.84,247.12,126.23
+timeplus-io/proton,Streaming Database,STORAGE SYSTEMS,,54.69,180.6
+influxdata/influxdb,Time-Series Database,STORAGE SYSTEMS,385.21,200.64,305.23
+timescale/timescaledb,Time-Series Database,STORAGE SYSTEMS,588.91,708.25,460.05
+apache/iotdb,Time-Series Database,STORAGE SYSTEMS,1278.08,1210.02,794.33
+Netflix/atlas,Time-Series Database,STORAGE SYSTEMS,41.9,25.49,30.04
+questdb/questdb,Time-Series Database,STORAGE SYSTEMS,515.64,533.19,461.2
+taosdata/TDengine,Time-Series Database,STORAGE SYSTEMS,1649.26,1526.45,1096.08
+kairosdb/kairosdb,Time-Series Database,STORAGE SYSTEMS,8.06,6.09,1.12
+GreptimeTeam/greptimedb,Time-Series Database,STORAGE SYSTEMS,38.38,500.01,478.99
+apache/kudu,Columnar OLAP Database,STORAGE SYSTEMS,0.83,3.51,0.8
+greenplum-db/gpdb,Columnar OLAP Database,STORAGE SYSTEMS,1317.76,1722.86,654.2
+MonetDB/MonetDB,Columnar OLAP Database,STORAGE SYSTEMS,98,63.02,97.07
+datafuselabs/databend,Columnar OLAP Database,STORAGE SYSTEMS,909.86,904.7,628.1
+ByConity/ByConity,Columnar OLAP Database,STORAGE SYSTEMS,,303.39,305.87
+hydradatabase/hydra,Columnar OLAP Database,STORAGE SYSTEMS,10.11,76.27,45.09
+ClickHouse/ClickHouse,Real-time OLAP Engine,STORAGE SYSTEMS,3725.13,4220.45,3962.88
+apache/pinot,Real-time OLAP Engine,STORAGE SYSTEMS,1118.13,1238.12,961.36
+apache/druid,Real-time OLAP Engine,STORAGE SYSTEMS,938.83,1084.39,955.97
+apache/kylin,Real-time OLAP Engine,STORAGE SYSTEMS,111.18,85.47,26.4
+apache/doris,Real-time OLAP Engine,STORAGE SYSTEMS,2069.31,3860.91,3359.62
+StarRocks/StarRocks,Real-time OLAP Engine,STORAGE SYSTEMS,,,
+duckdb/duckdb,In-process OLAP Engine,STORAGE SYSTEMS,829.9,1024.43,1018.6
+GlareDB/glaredb,In-process OLAP Engine,STORAGE SYSTEMS,,121.1,151.4
+apache/datafusion,In-process OLAP Engine,STORAGE SYSTEMS,,,
+chdb-io/chdb,In-process OLAP Engine,STORAGE SYSTEMS,,52.2,53.03
+duckdb/pg_duckdb,OLAP Extensions,STORAGE SYSTEMS,,,54.68
+paradedb/pg_analytics,OLAP Extensions,STORAGE SYSTEMS,,,25.1
+apache/hadoop,Distributed File System,DATA LAKE PLATFORM,1111.23,1031.62,727.48
+gluster/glusterfs,Distributed File System,DATA LAKE PLATFORM,510.74,210.86,87.6
+juicedata/juicefs,Distributed File System,DATA LAKE PLATFORM,501.83,432.47,340.6
+lustre,Lustre,Distributed File System,,,
+apache/ozone,Distributed Object Store,DATA LAKE PLATFORM,949.42,1218.16,950.39
+ceph/ceph,Distributed Object Store,DATA LAKE PLATFORM,3018.4,2846.05,2625.57
+minio/minio,Distributed Object Store,DATA LAKE PLATFORM,716.9,683.68,596.65
+deuxfleurs/garage,Distributed Object Store,DATA LAKE PLATFORM,,,
+apache/parquet-format,Serialisation Framework,DATA LAKE PLATFORM,5.06,28.73,48.26
+apache/avro,Serialisation Framework,DATA LAKE PLATFORM,212.14,155.58,131.11
+apache/orc,Serialisation Framework,DATA LAKE PLATFORM,153.14,130.95,107.95
+lancedb/lance,Serialisation Framework,DATA LAKE PLATFORM,49.03,245,338.07
+spiraldb/vortex,Serialisation Framework,DATA LAKE PLATFORM,,,79.41
+apache/hudi,Open Table Format,DATA LAKE PLATFORM,1828.44,1877.23,1059.39
+apache/iceberg,Open Table Format,DATA LAKE PLATFORM,1485.28,1473.98,1113.45
+delta-io/delta,Open Table Format,DATA LAKE PLATFORM,379.98,518.57,724.38
+apache/incubator-paimon,Open Table Format,DATA LAKE PLATFORM,151.85,647.85,666.62
+apache/incubator-xtable,Open Table Format,DATA LAKE PLATFORM,,18.61,147.9
+linkedin/openhouse,Open Table Format,DATA LAKE PLATFORM,,,121.99
+delta-io/delta-rs,Native Open Table Format Library,DATA LAKE PLATFORM,133.15,262.04,305.54
+apache/iceberg-python,Native Open Table Format Library,DATA LAKE PLATFORM,,50.4,305.49
+apache/hudi-rs,Native Open Table Format Library,DATA LAKE PLATFORM,,,32.6
+airbytehq/airbyte,Data Integration Platform,DATA INTEGRATION,3701.33,4149.25,2838.08
+apache/nifi,Data Integration Platform,DATA INTEGRATION,798.85,838.85,728.35
+apache/camel,Data Integration Platform,DATA INTEGRATION,465.81,587.88,462.97
+apache/gobblin,Data Integration Platform,DATA INTEGRATION,203.84,232.38,166.83
+apache/Inlong,Data Integration Platform,DATA INTEGRATION,,,
+meltano/meltano,Data Integration Platform,DATA INTEGRATION,154.8,219.6,98.33
+apache/seatunnel,Data Integration Platform,DATA INTEGRATION,672.97,922.7,780.37
+estuary/flow,Data Integration Platform,DATA INTEGRATION,132.84,130.85,94.73
+dlt-hub/dlt,Data Integration Platform,DATA INTEGRATION,36.94,215.17,421.27
+debezium/debezium,CDC Tool,DATA INTEGRATION,445.18,441.2,331.38
+apache/kafka,CDC Tool,DATA INTEGRATION,1189.66,1644.91,1686.25
+redpanda-data/connect,CDC Tool,DATA INTEGRATION,,,
+ververica/flink-cdc-connectors,CDC Tool,DATA INTEGRATION,473.09,441.11,161.07
+linkedin/brooklin,CDC Tool,DATA INTEGRATION,65.57,71.57,16.93
+rudderlabs/rudder-server,CDC Tool,DATA INTEGRATION,498.97,496.1,296.86
+artie-labs/transfer,CDC Tool,DATA INTEGRATION,,39.99,51.99
+getdozer/dozer,CDC Tool,DATA INTEGRATION,,207.99,82.73
+PeerDB-io/peerdb,CDC Tool,DATA INTEGRATION,,65.47,221.29
+amacneil/dbmate,Data Migration,DATA INTEGRATION,31.74,49.69,44.94
+bruin-data/ingestr,Data Migration,DATA INTEGRATION,,,
+slingdata-io/sling-cli,Data Migration,DATA INTEGRATION,,28.6,128.88
+cloudquery/cloudquery,Log & Event Collection,DATA INTEGRATION,233.03,610.46,305.09
+snowplow/snowplow,Log & Event Collection,DATA INTEGRATION,11.88,3.05,0.71
+apache/eventmesh,Log & Event Collection,DATA INTEGRATION,386.37,494.71,157.35
+apache/flume,Log & Event Collection,DATA INTEGRATION,26.48,16.21,2.08
+turbot/steampipe,Log & Event Collection,DATA INTEGRATION,222.88,219.81,62.88
+jitsucom/jitsu,Log & Event Collection,DATA INTEGRATION,131.96,69.86,60.3
+nsqio/nsq,Event Hub,DATA INTEGRATION,30.07,34.03,16.06
+apache/pulsar,Event Hub,DATA INTEGRATION,1818.65,999.05,623.64
+apache/rocketmq,Event Hub,DATA INTEGRATION,737.47,703.69,426.26
+redpanda-data/redpanda,Event Hub,DATA INTEGRATION,1229.65,1415,1061.69
+memphisdev/memphis,Event Hub,DATA INTEGRATION,84.32,267.05,40.06
+Multiwoven/multiwoven,Reverse ETL,DATA INTEGRATION,,,84.95
+apache/beam,Unified Processing,DATA PROCESSING AND COMPUTATION,2049.12,1867.82,1158.83
+apache/spark,Unified Processing,DATA PROCESSING AND COMPUTATION,2187.92,2570.78,2069.69
+DataLinkDC/dinky,Unified Processing,DATA PROCESSING AND COMPUTATION,303.76,382.06,363.02
+apache/hadoop, Batch processing,DATA PROCESSING AND COMPUTATION,1111.23,1031.62,727.48
+apache/tez, Batch processing,DATA PROCESSING AND COMPUTATION,82.48,58.81,55.07
+apache/flink,Stream Processing,DATA PROCESSING AND COMPUTATION,2059.34,1658.51,1201.65
+apache/samza,Stream Processing,DATA PROCESSING AND COMPUTATION,105.21,60.05,17.57
+apache/storm,Stream Processing,DATA PROCESSING AND COMPUTATION,37.33,44.54,19.81
+benthosdev/benthos,Stream Processing,DATA PROCESSING AND COMPUTATION,311.43,280.77,194.69
+akka/akka,Stream Processing,DATA PROCESSING AND COMPUTATION,238.63,95.12,77
+bytewax/bytewax,Stream Processing,DATA PROCESSING AND COMPUTATION,110.03,110.05,93
+timeplus-io/proton,Stream Processing,DATA PROCESSING AND COMPUTATION,,54.69,180.6
+airtai/faststream,Stream Processing,DATA PROCESSING AND COMPUTATION,0.91,113.82,152.69
+warpstreamlabs/bento,Stream Processing,DATA PROCESSING AND COMPUTATION,,,36.47
+pola-rs/polars,Python Processing Framework,DATA PROCESSING AND COMPUTATION,889.08,1905.92,1809
+vaexio/vaex,Python Processing Framework,DATA PROCESSING AND COMPUTATION,177.76,28.96,13.97
+apache/arrow,Python Processing Framework,DATA PROCESSING AND COMPUTATION,1454.97,1860.12,1412.22
+ibis-project/ibis,Python Processing Framework,DATA PROCESSING AND COMPUTATION,305.41,471.24,490.77
+eakmanrq/sqlframe,Python Processing Framework,DATA PROCESSING AND COMPUTATION,,,24.62
+dask/dask,Python Workflow Scaling,DATA PROCESSING AND COMPUTATION,401.54,250.36,181.55
+ray-project/ray,Python Workflow Scaling,DATA PROCESSING AND COMPUTATION,3142.56,3212.47,2216.32
+modin-project/modin,Python Workflow Scaling,DATA PROCESSING AND COMPUTATION,550.31,378.53,175.65
+nalepae/pandarallel,Python Workflow Scaling,DATA PROCESSING AND COMPUTATION,24.93,25.08,8.14
+sqlalchemy/sqlalchemy,SQL Toolkit,DATA PROCESSING AND COMPUTATION,403.1,402.17,257.89
+tobymao/sqlglot,SQL Toolkit,DATA PROCESSING AND COMPUTATION,271.24,463.57,426.58
+apache/airflow,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,2716.74,2864.32,2354.06
+PrefectHQ/prefect,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,807.52,1206.25,1006.8
+argoproj/argo-workflows,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,949.49,744.82,654.92
+azkaban/azkaban,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,182.74,131.2,2.55
+uber/cadence,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,230.72,267.52,399.91
+dagster-io/dagster,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,1133.86,1753.04,1703.81
+apache/dolphinscheduler,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,1433.33,919.92,564.13
+spotify/luigi,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,39.67,33.95,23.85
+flyteorg/flyte,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,294.13,413.69,533.84
+kestra-io/kestra,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,72.72,223.1,390.16
+mage-ai/mage-ai,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,91.18,447.1,492.1
+temporalio/temporal,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,434.98,567.56,602.24
+windmill-labs/windmill,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,88.26,319.79,354
+Netflix/maestro,Workflow Orchestration,WORKFLOW MANAGEMENT & DATAOPS,,,20.89
+celery/celery,Job Scheduling,WORKFLOW MANAGEMENT & DATAOPS,250.2,253.52,193
+distribworks/dkron,Job Scheduling,WORKFLOW MANAGEMENT & DATAOPS,45.73,29.18,20.53
+agronholm/apscheduler,Job Scheduling,WORKFLOW MANAGEMENT & DATAOPS,39.15,37.1,51.52
+datafold/data-diff,Data Quality,WORKFLOW MANAGEMENT & DATAOPS,109.77,160.12,37.14
+great-expectations/great_expectations,Data Quality,WORKFLOW MANAGEMENT & DATAOPS,908.75,1001.42,591.91
+awslabs/deequ,Data Quality,WORKFLOW MANAGEMENT & DATAOPS,12.41,55.38,43.12
+unionai-oss/pandera,Data Quality,WORKFLOW MANAGEMENT & DATAOPS,109.21,135.04,124.47
+sodadata/soda-core,Data Quality,WORKFLOW MANAGEMENT & DATAOPS,265.66,165.04,91.88
+treeverse/lakeFS,Data Versioning,WORKFLOW MANAGEMENT & DATAOPS,542.79,613.13,416.75
+projectnessie/nessie,Data Versioning,WORKFLOW MANAGEMENT & DATAOPS,230.01,200.06,174.22
+iterative/dvc,Data Versioning,WORKFLOW MANAGEMENT & DATAOPS,384.13,338.23,148.07
+dbt-labs/dbt-core,Data Modeling,WORKFLOW MANAGEMENT & DATAOPS,658.74,770.79,513.96
+TobikoData/sqlmesh,Data Modeling,WORKFLOW MANAGEMENT & DATAOPS,,328.39,439.56
+elementary-data/elementary,Pipeline Observability,WORKFLOW MANAGEMENT & DATAOPS,103.03,226.51,196.77
+apache/hadoop,Resource Scheduling,DATA INFRASTRUCTURE,1111.23,1031.62,727.48
+apache/mesos,Resource Scheduling,DATA INFRASTRUCTURE,28.79,3.3,21.19
+kubernetes/kubernetes,Resource Scheduling,DATA INFRASTRUCTURE,4422.02,4442.18,3231.71
+docker/docker,Resource Scheduling,DATA INFRASTRUCTURE,,,
+apache/ambari,Cluster Administration,DATA INFRASTRUCTURE,58.53,99.97,65.84
+apache/helix,Cluster Administration,DATA INFRASTRUCTURE,199.42,217.4,145.86
+apache/knox,Security,DATA INFRASTRUCTURE,131.55,101.53,82.67
+apache/ranger,Security,DATA INFRASTRUCTURE,27.55,45.92,59.6
+krb5/krb5,Security,DATA INFRASTRUCTURE,47.97,47.98,42.69
+influxdata/influxdb,Metrics Store,DATA INFRASTRUCTURE,385.21,200.64,305.23
+grafana/mimir,Metrics Store,DATA INFRASTRUCTURE,696.11,1121.4,978.14
+OpenTSDB/opentsdb,Metrics Store,DATA INFRASTRUCTURE,35.3,15.95,1.85
+m3db/m3,Metrics Store,DATA INFRASTRUCTURE,140.25,56.08,29.69
+prometheus/prometheus,Observability Framework,DATA INFRASTRUCTURE,605.65,580.18,700.61
+graphite-project,Observability Framework,DATA INFRASTRUCTURE,,,
+open-telemetry,Observability Framework,DATA INFRASTRUCTURE,,,
+VictoriaMetrics/VictoriaMetrics,Observability Framework,DATA INFRASTRUCTURE,706.73,921.04,890.12
+zabbix/zabbix,Observability Framework,DATA INFRASTRUCTURE,12.91,13.99,6.83
+grafana/grafana,Monitoring Dashboard,DATA INFRASTRUCTURE,5456.61,6396.05,5321.13
+elastic/kibana,Monitoring Dashboard,DATA INFRASTRUCTURE,7146.07,6951.96,6065.33
+redpanda-data/console,Monitoring Dashboard,DATA INFRASTRUCTURE,137.65,181.32,221.11
+fluent/fluentd,Log & Metrics Pipeline,DATA INFRASTRUCTURE,104.51,86.11,69.18
+fluent/fluent-bit,Log & Metrics Pipeline,DATA INFRASTRUCTURE,796.29,768.2,538.29
+elastic/logstash,Log & Metrics Pipeline,DATA INFRASTRUCTURE,323.88,214.03,194.66
+influxdata/telegraf,Log & Metrics Pipeline,DATA INFRASTRUCTURE,1021.94,868.63,567
+vectordotdev/vector,Log & Metrics Pipeline,DATA INFRASTRUCTURE,1339.71,1001.21,604.96
+statsd/statsd,Log & Metrics Pipeline,DATA INFRASTRUCTURE,6.01,4.08,3.46
+amundsen-io/amundsen,Metadata Platform,METADATA MANAGEMENT,293.12,97.63,31.55
+apache/atlas,Metadata Platform,METADATA MANAGEMENT,8.71,6.47,3.31
+datahub-project/datahub,Metadata Platform,METADATA MANAGEMENT,1029.26,1100.02,1004.02
+MarquezProject/marquez,Metadata Platform,METADATA MANAGEMENT,134.87,139.86,109.6
+ckan/ckan,Metadata Platform,METADATA MANAGEMENT,234.4,233.02,167.75
+open-metadata/OpenMetadata,Metadata Platform,METADATA MANAGEMENT,907.3,1295.68,1057.97
+opendatadiscovery/odd-platform,Metadata Platform,METADATA MANAGEMENT,193.5,119.29,70.66
+OpenLineage/OpenLineage,Open Standards,METADATA MANAGEMENT,284.98,252.01,272.6
+open-metadata/OpenMetadata,Open Standards,METADATA MANAGEMENT,907.3,1295.68,1057.97
+odpi/egeria,Open Standards,METADATA MANAGEMENT,168.87,103.38,37.55
+apache/hive,Schema & Catalog Service,METADATA MANAGEMENT,750.91,940.29,589.77
+confluentinc/schema-registry,Schema & Catalog Service,METADATA MANAGEMENT,203.21,185.06,142.97
+apache/polaris,Schema & Catalog Service,METADATA MANAGEMENT,,,109.79
+unitycatalog/unitycatalog,Schema & Catalog Service,METADATA MANAGEMENT,,,189.03
+lakekeeper/lakekeeper,Schema & Catalog Service,METADATA MANAGEMENT,,,42.58
+apache/superset,BI & Dashboard,ANALYTICS & VISUALISATION,1863.8,1670.45,1439.9
+metabase/metabase,BI & Dashboard,ANALYTICS & VISUALISATION,1575.48,2021.09,2236.55
+getredash/redash,BI & Dashboard,ANALYTICS & VISUALISATION,100.58,204.63,154.49
+lightdash/lightdash,BI & Dashboard,ANALYTICS & VISUALISATION,323.36,579.82,566.34
+streamlit/streamlit,BI as Code (Web App),ANALYTICS & VISUALISATION,739,1056.64,987.89
+evidence-dev/evidence,BI as Code (Web App),ANALYTICS & VISUALISATION,93.1,248.36,313.6
+plotly/dash,BI as Code (Web App),ANALYTICS & VISUALISATION,225.24,182.34,166.75
+mckinsey/vizro,BI as Code (Web App),ANALYTICS & VISUALISATION,,53.14,296.69
+mljar/mercury,BI as Code (Web App),ANALYTICS & VISUALISATION,67.61,85.75,30.06
+quarylabs/quary,BI as Code (Web App),ANALYTICS & VISUALISATION,,,28.95
+cloudera/hue,Query & Collaboration,ANALYTICS & VISUALISATION,258.59,354,294.68
+apache/zeppelin,Query & Collaboration,ANALYTICS & VISUALISATION,139.34,98.09,86.96
+pinterest/querybook,Query & Collaboration,ANALYTICS & VISUALISATION,147.56,159.14,85.37
+jupyter/notebook,Query & Collaboration,ANALYTICS & VISUALISATION,120.04,147.25,87.18
+simonw/datasette,Query & Collaboration,ANALYTICS & VISUALISATION,67.44,43.63,37.52
+apache/hive,MPP Query Engine,ANALYTICS & VISUALISATION,750.91,940.29,589.77
+apache/impala,MPP Query Engine,ANALYTICS & VISUALISATION,1.39,9.46,1.92
+prestodb/presto,MPP Query Engine,ANALYTICS & VISUALISATION,1183.71,1298.57,1139.17
+trinodb/trino,MPP Query Engine,ANALYTICS & VISUALISATION,2268.54,2291.63,1649.79
+apache/drill,MPP Query Engine,ANALYTICS & VISUALISATION,191.37,77.72,60.26
+Alluxio/alluxio,Semantic & Middleware Layer,ANALYTICS & VISUALISATION,1138.16,1074.91,306.51
+cube-js/cube,Semantic & Middleware Layer,ANALYTICS & VISUALISATION,721.28,631.39,498.41
+apache/linkis,Semantic & Middleware Layer,ANALYTICS & VISUALISATION,469.62,327.08,65.75
+apache/incubator-gluten,Semantic & Middleware Layer,ANALYTICS & VISUALISATION,194.33,898.65,1040.32
+delta-io/delta-sharing,Data Sharing,ANALYTICS & VISUALISATION,63.32,132.13,68.96
+milvus-io/milvus,Vector Storage,ML/AI PLATFORM,1345.49,1741.56,1633.25
+qdrant/qdrant,Vector Storage,ML/AI PLATFORM,194.1,487.28,563.01
+chroma-core/chroma,Vector Storage,ML/AI PLATFORM,0.89,531.21,561.79
+marqo-ai/marqo,Vector Storage,ML/AI PLATFORM,36.3,163.78,165.11
+lancedb/lancedb,Vector Storage,ML/AI PLATFORM,,132.99,286.69
+weaviate/weaviate,Vector Storage,ML/AI PLATFORM,241.82,519.43,654.57
+activeloopai/deeplake,Vector Storage,ML/AI PLATFORM,397.45,363.91,152.56
+vespa-engine/vespa,Vector Storage,ML/AI PLATFORM,740,761.25,530.19
+vdaas/vald,Vector Storage,ML/AI PLATFORM,220.55,215.08,132.17
+pgvector/pgvector,Vector Storage,ML/AI PLATFORM,22.81,177.74,188.84
+mlflow/mlflow,MLOps,ML/AI PLATFORM,877.08,1147.12,1024.38
+Netflix/metaflow,MLOps,ML/AI PLATFORM,205.46,264.38,254.11
+skypilot-org/skypilot,MLOps,ML/AI PLATFORM,104.29,501.97,470.31
+jina-ai/jina,MLOps,ML/AI PLATFORM,432.5,272.59,52.21
+microsoft/nni,MLOps,ML/AI PLATFORM,480.42,291.35,26.32
+bentoml/BentoML,MLOps,ML/AI PLATFORM,349.65,319.63,245.55
+determined-ai/determined,MLOps,ML/AI PLATFORM,863.73,1347.42,963.09
+ray-project/ray,MLOps,ML/AI PLATFORM,3142.56,3212.47,2216.32
+kubeflow/kubeflow,MLOps,ML/AI PLATFORM,194.95,205.95,75.37
+deepset-ai/haystack,MLOps,ML/AI PLATFORM,700.53,767.08,453.98
+kedro-org/kedro,MLOps,ML/AI PLATFORM,374.19,486.66,316.13
+pachyderm/pachyderm,MLOps,ML/AI PLATFORM,530.37,547.76,391.88
+superduper-io/superduper,MLOps,ML/AI PLATFORM,,,
+dataease/dataease,,,609.14,942.77,1128.31
+matplotlib/matplotlib,,,959.85,1057.67,601.12
+apache/echarts,,,700.14,602.73,460.89
+apache/incubator-devlake,,,414.16,591.87,458.08
+apache/kyuubi,,,591.25,610.99,334.11
+apache/kvrocks,,,242.22,299.14,289.47
+hazelcast/hazelcast,,,748.21,857.85,279.11
+apache/calcite,,,255.91,421.19,274.49
+plotly/plotly.js,,,227.86,285.27,247.66
+apache/incubator-streampark,,,348.16,401.19,235.98
+apache/phoenix,,,158.72,212.61,203.55
+antvis/G2,,,203.53,313.63,171.17
+biolab/orange3,,,177.26,173.23,108.98
+apache/incubator-pegasus,,,105.9,111.59,93.6
+apache/bigtop,,,120.85,110.82,80.6
+alibaba/DataX,,,125.24,129.82,64.1
+keplergl/kepler.gl,,,151.27,83.87,62.86
+airbnb/visx,,,77.33,74.34,60.46
+nhn/tui.chart,,,12.64,3.48,2.25
+logging-flume,,,,,
+edp963/davinci,,,12.58,4.4,2.05
+c3js/c3,,,2.26,2.21,1.21
+apache/oozie,,,4.39,0.65,0.87
+TalkingData/inmap,,,0.12,,0.51
+uber/aresdb,,,,0.24,0.4
+apache/hawq,,,0.35,0.69,0.33
+eventql/eventql,,,0.31,,0.16

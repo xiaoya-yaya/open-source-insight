@@ -1,0 +1,104 @@
+{
+  "title": {
+    "text": "LLM Agent Framework Emergence Timeline",
+    "left": "center",
+    "top": "10",
+    "textStyle": {
+      "fontSize": 20,
+      "fontWeight": "bold"
+    }
+  },
+  "yAxis": {
+    "type": "category",
+    "data": [
+      "deepset-ai/haystack",
+      "n8n-io/n8n",
+      "langchain-ai/langchain",
+      "run-llama/llama_index",
+      "camel-ai/camel",
+      "Significant-Gravitas/AutoGPT",
+      "FlowiseAI/Flowise",
+      "langgenius/dify",
+      "eosphoros-ai/DB-GPT",
+      "geekan/MetaGPT",
+      "microsoft/semantic-kernel",
+      "microsoft/autogen",
+      "langchain-ai/langgraph",
+      "crewAIInc/crewAI",
+      "infiniflow/ragflow",
+      "openai/openai-agents-python"
+    ],
+    "inverse": true
+  },
+  "xAxis": {
+    "type": "time",
+    "min": "2019-01-01",
+    "max": "2025-04-01"
+  },
+  "grid": {
+    "containLabel": true,
+    "left": 50,
+    "right": 50,
+    "top": 80,
+    "bottom": 50
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "formatter": "{b}: {c}"
+  },
+  "series": [
+    {
+      "type": "bar",
+      "itemStyle": {
+        "color": "#91cc75"
+      },
+      "encode": {
+        "x": [1,2],
+        "y": 0
+      },
+      "data": [
+        [0, "2019-11-01", "2025-04-01", "deepset-ai/haystack"],
+        [1, "2019-08-01", "2025-04-01", "n8n-io/n8n"],
+        [2, "2022-10-01", "2025-04-01", "langchain-ai/langchain"],
+        [3, "2022-11-01", "2025-04-01", "run-llama/llama_index"],
+        [4, "2023-03-01", "2025-04-01", "camel-ai/camel"],
+        [5, "2023-03-01", "2025-04-01", "Significant-Gravitas/AutoGPT"],
+        [6, "2023-04-01", "2025-04-01", "FlowiseAI/Flowise"],
+        [7, "2023-05-01", "2025-04-01", "langgenius/dify"],
+        [8, "2023-04-01", "2025-04-01", "eosphoros-ai/DB-GPT"],
+        [9, "2023-07-01", "2025-04-01", "geekan/MetaGPT"],
+        [10, "2023-03-01", "2025-04-01", "microsoft/semantic-kernel"],
+        [11, "2023-09-01", "2025-04-01", "microsoft/autogen"],
+        [12, "2023-08-01", "2025-04-01", "langchain-ai/langgraph"],
+        [13, "2023-11-01", "2025-04-01", "crewAIInc/crewAI"],
+        [14, "2024-04-01", "2025-04-01", "infiniflow/ragflow"],
+        [15, "2025-03-01", "2025-04-01", "openai/openai-agents-python"]
+      ]
+    },
+    {
+      "type": "scatter",
+      "symbolSize": 10,
+      "data": [
+        [0, "2019-11-01", "deepset-ai/haystack"],
+        [1, "2019-08-01", "n8n-io/n8n"],
+        [2, "2022-10-01", "langchain-ai/langchain"],
+        [3, "2022-11-01", "run-llama/llama_index"],
+        [4, "2023-03-01", "camel-ai/camel"],
+        [5, "2023-03-01", "Significant-Gravitas/AutoGPT"],
+        [6, "2023-04-01", "FlowiseAI/Flowise"],
+        [7, "2023-05-01", "langgenius/dify"],
+        [8, "2023-04-01", "eosphoros-ai/DB-GPT"],
+        [9, "2023-07-01", "geekan/MetaGPT"],
+        [10, "2023-03-01", "microsoft/semantic-kernel"],
+        [11, "2023-09-01", "microsoft/autogen"],
+        [12, "2023-08-01", "langchain-ai/langgraph"],
+        [13, "2023-11-01", "crewAIInc/crewAI"],
+        [14, "2024-04-01", "infiniflow/ragflow"],
+        [15, "2025-03-01", "openai/openai-agents-python"]
+      ],
+      "itemStyle": {
+        "color": "#5470c6"
+      }
+    }
+  ]
+}

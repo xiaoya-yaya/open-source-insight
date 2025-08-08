@@ -1,0 +1,30 @@
+import YayaChart from '@site/src/components/YayaChart';
+import AgentOpenRankTrendsLineChart from '../_charts/AgentFrameworkTrendsLineChart';
+import InferenceOpenRankTrendsLineChart from '../_charts/DeployInferenceTrendsLineChart';
+import RayProjectOpenRankTrendsLineChart from '../_charts/DistributedComputeTrendsLineChart';
+import IDEOpenRankTrendsLineChart from '../_charts/IDEOpenRankTrendsLineChart';
+import LLMDistributedTrainingLineChart from '../_charts/LLMDistributedTrainingLineChart';
+import TrainingFrameworksOpenRankDecadeTrendsBumpChart from '../_charts/TrainingFrameworksTrendsBumpChart';
+import TrainingFrameworksOpenRankDecadeTrendsLineChart from '../_charts/TrainingFrameworksTrendsLineChart';
+import VectorDataEngineStorageLineChart from '../_charts/VectorDataEngineStorageLineChart';
+
+<YayaChart
+    title="传统机器学习训练框架的十年发展趋势"
+    chart={<TrainingFrameworksOpenRankDecadeTrendsLineChart />}
+/>
+<YayaChart
+    title="面向大模型的大规模分布式训练框架"
+    chart={<LLMDistributedTrainingLineChart />}
+/>
+<YayaChart title="大规模分布式计算引擎" chart={<RayProjectOpenRankTrendsLineChart />} />
+<YayaChart title="部署推理服务引擎" chart={<InferenceOpenRankTrendsLineChart />} />
+<YayaChart title="Agent 应用编排框架" chart={<AgentOpenRankTrendsLineChart />} />
+<YayaChart title="向量数据执行与存储" chart={<VectorDataEngineStorageLineChart />} />
+<YayaChart
+    title="传统 IDE 与 AI 交互式生成工具"
+    chart={<IDEOpenRankTrendsLineChart />}
+/>
+<YayaChart
+    title="传统机器学习训练框架的十年发展趋势（凹凸图）"
+    chart={<TrainingFrameworksOpenRankDecadeTrendsBumpChart />}
+/>

@@ -1,0 +1,22 @@
+import YayaChart from '@site/src/components/YayaChart';
+import OpenDiggerLineChart from '@site/src/components/OpenDiggerLineChart';
+import TrainingFrameworksOpenRankDecadeTrendsBumpChart from '../_charts/TrainingFrameworksTrendsBumpChart';
+import { MetricCategory, RepositoryMetricType, TimeUnit } from '@site/src/types/opendigger';
+
+<YayaChart
+    title="传统机器学习训练框架的十年发展趋势（凹凸图）"
+    chart={<TrainingFrameworksOpenRankDecadeTrendsBumpChart />}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['langchain-ai/langchain', 'Significant-Gravitas/AutoGPT', 'langgenius/dify', 'geekan/MetaGPT', 'eosphoros-ai/DB-GPT', 'antgroup/agentUniverse', 'run-llama/llama_index', 'microsoft/autogen', 'crewAIInc/crewAI' , 'camel-ai/camel']}
+  timeUnit={TimeUnit.MONTH}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['jupyterlab/jupyterlab', 'spyder-ide/spyder', 'getcursor/cursor', 'TabbyML/tabby', 'All-Hands-AI/OpenHands', 'microsoft/vscode']}
+  timeUnit={TimeUnit.MONTH}
+  timeSpan={['2022-10', '2024-11']}
+/>

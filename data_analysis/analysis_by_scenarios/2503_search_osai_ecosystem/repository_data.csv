@@ -1,0 +1,9 @@
+repo_id,repo_name,stars,openrank_2025,language,created_at,description,avatar_url
+870189331,simular-ai/Agent-S,2287,12.0,Python,2024-10-09,Agent S: an open agentic framework that uses computers like a human,https://avatars.githubusercontent.com/u/99358647?v=4
+691347156,1Panel-dev/MaxKB,15630,215.0,Python,2023-09-14,"💬 MaxKB is a ready-to-use AI chatbot that integrates Retrieval-Augmented Generation (RAG) pipelines, supports robust workflows, and provides advanced MCP tool-use capabilities.",https://avatars.githubusercontent.com/u/109613420?v=4
+610260322,chatboxai/chatbox,34111,,TypeScript,2023-03-06,"User-friendly Desktop Client App for AI Models/LLMs (GPT, Claude, Gemini, Ollama...)",https://avatars.githubusercontent.com/u/199570308?v=4
+676672661,langchain-ai/langgraph,11469,265.0,Python,2023-08-09,Build resilient language agents as graphs.,https://avatars.githubusercontent.com/u/126733545?v=4
+958830659,google/adk-python,6103,,Python,2025-04-01,"An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",https://avatars.githubusercontent.com/u/1342004?v=4
+954873280,google/A2A,9622,,Python,2025-03-25,An open protocol enabling communication and interoperability between opaque agentic applications.,https://avatars.githubusercontent.com/u/1342004?v=4
+459870310,kubernetes-sigs/kueue,1717,180.0,Go,2022-02-16,Kubernetes-native Job Queueing,https://avatars.githubusercontent.com/u/36015203?v=4
+881221486,volcengine/verl,6580,194.0,Python,2024-10-31,verl: Volcano Engine Reinforcement Learning for LLMs,https://avatars.githubusercontent.com/u/67365215?v=4

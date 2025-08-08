@@ -1,0 +1,11 @@
+请帮我优化这个基于 docusaurus 制作的网站：
+1. 简化入口页面 ant-ospo-insights 页面，只保留这样的 slogan：Open Source Insight Hub: Insight into the open source ecosystem and technilogy evolvement. 去掉和 OpenDigger、指标、应用相关的内容。
+2. 上方的 banner，隐去 Ant Open Source 部分和 OpenRank 贡献度排行榜部分，保留 Insights 部分，重命名为 "Open Source Insight Blog";
+3. 上方的 banner，添加 LLM Landscape，超链接跳转到地址：https://antoss-landscape.my.canva.site/。
+
+继续优化入口页面：
+1. 路径从 ant-ospo-insights 改成 open-source-insight
+2. 按钮去掉蚂蚁的 logo，描述从 Ant Open Source 改成 Home
+3. 在当前页面内容的基础上，美化布局排版和视觉风格，同时也可以修改与润色文字描述
+4. 在 Explore Insights 基础上，添加 Explore LLM Landscape 按钮，点击跳转到 https://antoss-landscape.my.canva.site/
+

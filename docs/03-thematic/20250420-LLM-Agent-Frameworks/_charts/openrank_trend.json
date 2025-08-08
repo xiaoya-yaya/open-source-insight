@@ -1,0 +1,176 @@
+{
+  "title": {
+    "text": "OpenRank Trend (2023-2025)",
+    "left": "center",
+    "top": 0,
+    "textStyle": {
+      "fontSize": 20,
+      "fontWeight": "bold"
+    }
+  },
+  "xAxis": {
+    "type": "category",
+    "data": ["2023", "2024", "2025 (Q1)"]
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "OpenRank"
+  },
+  "series": [
+    {
+      "name": "langgenius/dify",
+      "type": "line",
+      "data": [495.44, 3135.57, 1331.83],
+      "emphasis": {
+        "focus": "series"
+      },
+      "lineStyle": {
+        "width": 3
+      }
+    },
+    {
+      "name": "n8n-io/n8n",
+      "type": "line",
+      "data": [1163.72, 1339.63, 589.37],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "infiniflow/ragflow",
+      "type": "line",
+      "data": [0, 862.76, 583.27],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "langchain-ai/langchain",
+      "type": "line",
+      "data": [4755.39, 4212.26, 499.32],
+      "emphasis": {
+        "focus": "series"
+      },
+      "lineStyle": {
+        "width": 3
+      }
+    },
+    {
+      "name": "run-llama/llama_index",
+      "type": "line",
+      "data": [1648.10, 2665.89, 369.53],
+      "emphasis": {
+        "focus": "series"
+      },
+      "lineStyle": {
+        "width": 3
+      }
+    },
+    {
+      "name": "microsoft/autogen",
+      "type": "line",
+      "data": [314.83, 1436.95, 319.54],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "microsoft/semantic-kernel",
+      "type": "line",
+      "data": [969.33, 1378.86, 294.14],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "langchain-ai/langgraph",
+      "type": "line",
+      "data": [10.54, 676.71, 265.43],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "crewAIInc/crewAI",
+      "type": "line",
+      "data": [6.80, 705.46, 230.86],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "camel-ai/camel",
+      "type": "line",
+      "data": [151.85, 387.35, 173.81],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "FlowiseAI/Flowise",
+      "type": "line",
+      "data": [344.56, 750.29, 165.21],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "type": "line",
+      "data": [1974.51, 597.14, 147.78],
+      "emphasis": {
+        "focus": "series"
+      },
+      "lineStyle": {
+        "width": 3
+      }
+    },
+    {
+      "name": "eosphoros-ai/DB-GPT",
+      "type": "line",
+      "data": [267.92, 527.25, 113.26],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "deepset-ai/haystack",
+      "type": "line",
+      "data": [767.08, 523.14, 96.96],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "openai/openai-agents-python",
+      "type": "line",
+      "data": [0, 0, 63.63],
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "geekan/MetaGPT",
+      "type": "line",
+      "data": [231.04, 422.69, 53.45],
+      "emphasis": {
+        "focus": "series"
+      }
+    }
+  ],
+  "legend": {
+    "type": "scroll",
+    "orient": "horizontal",
+    "top": 20
+  },
+  "tooltip": {
+    "trigger": "axis"
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "top": "20%",
+    "containLabel": true
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "title": {
+    "show": false,
+    "text": "Community Engagement (2023-2025)",
+    "left": "center",
+    "textStyle": {
+      "fontSize": 20,
+      "fontWeight": "bold"
+    }
+  },
+  "legend": {
+    "top": 30
+  },
+  "tooltip": {
+    "trigger": "item"
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "top": "15%",
+    "containLabel": true
+  },
+  "xAxis": {
+    "type": "value",
+    "name": "Contributors",
+    "nameLocation": "middle",
+    "nameGap": 30
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "Participants",
+    "nameLocation": "middle",
+    "nameGap": 30
+  },
+  "series": [
+    {
+      "name": "2023",
+      "type": "scatter",
+      "symbolSize": 20,
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        [56, 665, 495.44, "langgenius/dify"],
+        [71, 659, 1163.72, "n8n-io/n8n"],
+        [0, 0, 0, "infiniflow/ragflow"],
+        [1819, 9457, 4755.39, "langchain-ai/langchain"],
+        [516, 2716, 1648.10, "run-llama/llama_index"],
+        [104, 699, 314.83, "microsoft/autogen"],
+        [188, 932, 969.33, "microsoft/semantic-kernel"],
+        [2, 4, 10.54, "langchain-ai/langgraph"],
+        [9, 24, 6.80, "crewAIInc/crewAI"],
+        [20, 76, 151.85, "camel-ai/camel"],
+        [63, 721, 344.56, "FlowiseAI/Flowise"],
+        [640, 5776, 1974.51, "Significant-Gravitas/AutoGPT"],
+        [49, 375, 267.92, "eosphoros-ai/DB-GPT"],
+        [103, 478, 767.08, "deepset-ai/haystack"],
+        [0, 0, 0, "openai/openai-agents-python"],
+        [62, 513, 231.04, "geekan/MetaGPT"]
+      ]
+    },
+    {
+      "name": "2024",
+      "type": "scatter",
+      "symbolSize": 20,
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        [509, 3601, 3135.57, "langgenius/dify"],
+        [106, 1017, 1339.63, "n8n-io/n8n"],
+        [135, 1502, 862.76, "infiniflow/ragflow"],
+        [1347, 6868, 4212.26, "langchain-ai/langchain"],
+        [854, 3297, 2665.89, "run-llama/llama_index"],
+        [259, 1580, 1436.95, "microsoft/autogen"],
+        [149, 990, 1378.86, "microsoft/semantic-kernel"],
+        [103, 701, 676.71, "langchain-ai/langgraph"],
+        [169, 1672, 705.46, "crewAIInc/crewAI"],
+        [51, 113, 387.35, "camel-ai/camel"],
+        [119, 1358, 750.29, "FlowiseAI/Flowise"],
+        [53, 733, 597.14, "Significant-Gravitas/AutoGPT"],
+        [71, 598, 527.25, "eosphoros-ai/DB-GPT"],
+        [68, 335, 523.14, "deepset-ai/haystack"],
+        [0, 0, 0, "openai/openai-agents-python"],
+        [69, 512, 422.69, "geekan/MetaGPT"]
+      ]
+    },
+    {
+      "name": "2025 (Q1)",
+      "type": "scatter",
+      "symbolSize": 20,
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        [199, 3243, 1331.83, "langgenius/dify"],
+        [50, 1252, 589.37, "n8n-io/n8n"],
+        [84, 1426, 583.27, "infiniflow/ragflow"],
+        [229, 997, 499.32, "langchain-ai/langchain"],
+        [166, 576, 369.53, "run-llama/llama_index"],
+        [82, 393, 319.54, "microsoft/autogen"],
+        [59, 334, 294.14, "microsoft/semantic-kernel"],
+        [62, 333, 265.43, "langchain-ai/langgraph"],
+        [53, 545, 230.86, "crewAIInc/crewAI"],
+        [53, 150, 173.81, "camel-ai/camel"],
+        [39, 347, 165.21, "FlowiseAI/Flowise"],
+        [22, 141, 147.78, "Significant-Gravitas/AutoGPT"],
+        [19, 189, 113.26, "eosphoros-ai/DB-GPT"],
+        [22, 84, 96.96, "deepset-ai/haystack"],
+        [44, 320, 63.63, "openai/openai-agents-python"],
+        [7, 143, 53.45, "geekan/MetaGPT"]
+      ]
+    }
+  ],
+  "legend": {
+    "orient": "horizontal",
+    "top": 0
+  },
+  "tooltip": {
+    "trigger": "item"
+  },
+  "grid": {
+    "left": "5%",
+    "right": "5%",
+    "bottom": "10%",
+    "top": "15%",
+    "containLabel": true
+  }
+}

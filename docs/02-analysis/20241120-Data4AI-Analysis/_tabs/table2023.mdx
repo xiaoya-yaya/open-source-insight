@@ -1,0 +1,59 @@
+import YayaChart from '@site/src/components/YayaChart';
+import {
+  AIEcosystemCorrelationChart1,
+  AIEcosystemCorrelationChart2,
+  AIEcosystemCorrelationChart3,
+  AIEcosystemCorrelationChart4,
+  AIEcosystemCorrelationChart5,
+  AIEcosystemCorrelationChart6,
+} from '../_charts/AIEcosystemCorrelationCharts';
+
+在这些网络关联图里，我们以一些热门项目为出发点，对它们的高度关联项目展开了三度连接，项目本身的权重是它们在全域生态下体现出的一个值，是基于 X-lab 实验室提出的一套评价体系 OpenRank 进行计算的，而边上的权重是它们的关联程度。
+我们还尝试换了一些出发点，然后，我给一些简单的结论，大家可以继续发挥：
+1. 生态中的核心高光项目的稳定性——改变出发点会改变入选项目，但有些热点项目，不论从哪个点出发，都很容易被引入进来，比如 PyTorch, llama.cpp, huggingface/transformers 这些，可以认为关心 LLM 生态的人都会去这些项目有所表达；（当然，距离应用 / 算法开发比较近的项目热度会更高，这是很自然的）
+2. 生态中开发者的聚集效应——例如中国开发者会更容易和中国开发者产生互动，当我们以 Langchain-Chatchat 项目为出发点，就更容易把 MetaGPT, DB-GPT 这些中国人为核心开发的项目给联系进来；
+
+以及生态的分裂，有些项目是不容易被大模型相关的开源项目引入进来的：
+
+1. 生态的隔离性——比如 Kubernetes，就完全没有被引入，虽然大家都会用它，我们推测可能的原因：
+
+- 它的 API 已经比较稳定，即使是利用了接口也不需要去社区互动；
+- 同时快速发展的项目可能更容易有互动，而在这些大模型项目崛起的时候，Kubernetes 已经处在一个相对成熟的状态了；
+   而且很有可能的一点——计算生态圈和 AI 生态圈的开发者之间可能是有相对强的隔离的，上面链接里，我们也做了一个图来验证，我们加入了 volcano 这个在 Kubernetes 上支持大模型训练的扩展，把 Kubernetes 链接进了图里，但是，很明显可以看出来，这两个生态之间的共同关联是非常少的（比如只有 vscode, argo-cd 这样的关联；
+- 另外，其实 Ray 和 PyTorch 生态彼此也相当隔离，尽管主要开发语言都是 Python，并且也是 AI 领域的常用项目，这基本说明了两者在生态位上的区隔。
+
+2. 非社区化项目——有些很多人用的项目，但是互动比较少，比如大部分 Nvidia 的项目都没有被引入进来，推测是单向使用，或者社区比较高冷。
+
+<YayaChart
+    title="AI 生态关联关系图一：种子节点 PyTorch, vLLM, LangChain"
+    chart={<AIEcosystemCorrelationChart1 />}
+/>
+
+
+<YayaChart
+    title="AI 生态关联关系图二：种子节点 PyTorch, vLLM, LangChain, AutoGPT"
+    chart={<AIEcosystemCorrelationChart2 />}
+/>
+
+
+<YayaChart
+    title="AI 生态关联关系图三：种子节点 PyTorch, vLLM, LangChain, AutoGPT, Langchain-Chatchat "
+    chart={<AIEcosystemCorrelationChart3 />}
+/>
+
+
+<YayaChart
+    title="AI 生态关联关系图四：种子节点 AutoGPT, Langchain-Chatchat, llama.cpp"
+    chart={<AIEcosystemCorrelationChart4 />}
+/>
+
+
+<YayaChart
+    title="AI 生态关联关系图五：种子节点 DeepSpeed, Triton, ONNX Runtime"
+    chart={<AIEcosystemCorrelationChart5 />}
+/>
+
+<YayaChart
+    title="AI 生态关联关系图六：种子节点 DeepSpeed, Triton, ONNX Runtime, Volcano"
+    chart={<AIEcosystemCorrelationChart6 />}
+/>

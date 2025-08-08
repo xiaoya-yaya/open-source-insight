@@ -1,0 +1,45 @@
+{
+  "title": {
+    "text": "OpenRank Monthly Trend (2023-2025)",
+    "left": "center",
+    "top": 10,
+    "textStyle": {
+      "fontSize": 20,
+      "fontWeight": "bold"
+    }
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "cross"
+    }
+  },
+  "legend": {
+    "type": "scroll",
+    "orient": "horizontal",
+    "top": 50,
+    "left": "center"
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "top": "25%",
+    "containLabel": true
+  },
+  "xAxis": {
+    "type": "category",
+    "boundaryGap": false,
+    "data": []
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "OpenRank",
+    "scale": true
+  },
+  "series": [],
+  "animationDuration": 10000,
+  "animationDurationUpdate": 3000,
+  "animationEasing": "linear",
+  "animationEasingUpdate": "linear"
+}

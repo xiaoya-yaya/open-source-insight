@@ -1,0 +1,205 @@
+import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+
+import OpenDiggerLineChart from '@site/src/components/OpenDiggerLineChart';
+import SimpleECharts from '@site/src/components/SimpleECharts';
+import SimpleTable from '@site/src/components/SimpleTable';
+import YayaChart from '@site/src/components/YayaChart';
+import GraphChart from '@site/src/components/GraphChart';
+import { MetricCategory, RepositoryMetricType, TimeUnit } from '@site/src/types/opendigger';
+import {
+  LandscapeCorrelationChartFull
+} from './_charts/AIEcosystemCorrelationCharts';
+
+
+# 2025-05 LLM Landscape
+
+> #### 基于社区数据在 LLM & CNAI & Data4AI 领域 Landscape 初步洞察结果展示。
+
+### 一、方法论
+在第一部分，我们希望通过生态关联网络的方式，寻找到那些在明显受到大模型发展冲击的技术领域下，一些或是新兴涌现的的、或是得到了快速发展的，位置于生态核心位置的项目们。
+
+生态网络的构建方式展示了我们对哪些项目应该出现在生态中，以及后续出现在我们的 Landscape 上的一种价值判断，这个构建方式包括了：
+1. 选取什么样的项目作为起始节点做搜索。例如，选取一些已经被广泛认可，或是明显归属于某一技术方向的新兴/老牌项目，新兴如 vLLM，ollama 等，老牌如 PyTorch， Kubernetes 等；
+2. 项目之间以什么样的方式被关联起来。从广义上来看项目之间的关联关系，有一位名人（不是鲁迅）定义过这样三种关系：代码或执行依赖性，上下游合作关系，同生态位的替换/竞争关系（见[文章](https://xiaoya-yaya.github.io/ant-ospo-insights/analysis/QCon-Shanghai-2024)）。
+具体到数据，我们可以从不同维度尝试模拟出上述的关系，例如：
+    - 代码依赖关系：通过代码仓库的依赖关系，或是代码中的引用关系，或是代码中的调用关系等；数据所限，目前能通过 SBOM 拿到部分仓库依赖关系，仓库代码粒度上的数据暂且没有；
+    - 合作关系：通过项目的共同贡献者的重叠，可以从共同的 Issue 讨论，Commit、PR 提交的开发者数量重叠来体现；
+    - 竞争关系：通过项目的共同用户的重叠，可以从共同 Star/Fork 的开发者数量重叠来体现。
+
+3. 最后，如何展示项目之间的关系？这里暂且沿用之前的方式，先展示数据告诉我们的一个客观的中间态结果，作为 pre-landscape 的前置输入以供参考。我们选取了不同的种子项目和搜索条件来提供生态探查的多个侧面，下面展示了一系列关联到的结果。~~最后将这些结果进行汇总，以期得到一个更全面的生态网络。~~
+
+
+> 种子节点
+> 过滤条件：
+> - 节点： OpenRank > xx
+> - 关联边： 1. 种子项目的 Top 5 贡献者对外贡献度 Top 20 的项目；2. 和种子项目的共同 Star 用户数量；
+
+
+> 上述搜索条件基于以下两个假设：<br />
+> 1.在项目 A 和项目 B 中的 Issue/PR 的参与者高度重叠，可能表示 A、B 之间存在上下游合作/依赖关系；<br />
+> 2.对项目 A 和项目 B 进行 Star/Fork 的人群高度重叠，可能意味着 A、B 之间存在同生态位的竞争关系；<br />
+> （以及3，暂未实现的，但是是一种对有向图的设想，即项目 A 的 Top 贡献者对 B 项目的 Issue 参与度较高，潜在可能代表了 A 依赖于 B 的单向依赖关系；这种依赖关系如果能通过 SBOM 获取，可能更加直观。）
+
+### 二、生态关联网络
+<YayaChart
+    title= "Data4AI 项目关联网络"
+    chart={<LandscapeCorrelationChartFull />}
+/>
+
+
+### 三、 AI 开源技术趋势
+
+#### 1. Agent 平台、框架、工具和工作流
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+names={['langgenius/dify', 'n8n-io/n8n','infiniflow/ragflow', 'langchain-ai/langchain', 'microsoft/semantic-kernel', 'run-llama/llama_index','labring/FastGPT', 'microsoft/autogen', 'langchain-ai/langgraph','crewAIInc/crewAI', 'Significant-Gravitas/AutoGPT']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+names={['openai/openai-agents-python','camel-ai/camel','microsoft/graphrag','FoundationAgents/MetaGPT', 'langgenius/dify','n8n-io/n8n','infiniflow/ragflow','labring/FastGPT','1Panel-dev/MaxKB','FlowiseAI/Flowise','Significant-Gravitas/AutoGPT','eosphoros-ai/DB-GPT','deepset-ai/haystack','chatchat-space/Langchain-Chatchat']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+#### 2. Agent 标准协议的占位之争
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['SillyTavern/SillyTavern', 'songquanpeng/one-api', 'BerriAI/litellm', 'modelcontextprotocol/servers', 'ComposioHQ/composio']}
+  timeUnit={TimeUnit.MONTH}
+  timeSpan={['2023-01','2025-03']}
+/>
+
+#### 3. 代码助手作为落地的 AI 应用领域
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={[ 'continuedev/continue', 'cline/cline', 'All-Hands-AI/OpenHands', 'sourcegraph/cody','Aider-AI/aider', 'TabbyML/tabby']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['stitionai/devika', 'codota/TabNine', 'Pythagora-io/gpt-pilot', 'AntonOsika/gpt-engineer']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+names={['ItzCrazyKns/Perplexica', 'zaidmukaddam/scira','leptonai/search_with_lepton','InternLM/MindSearch','miurla/morphic','BloopAI/bloop']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+
+
+#### 4. 面向 LLM 的非结构化数据治理
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['open-metadata/OpenMetadata', 'datahub-project/datahub', 'apache/gravitino', 'dbt-labs/dbt-core', 'unitycatalog/unitycatalog', 'apache/iceberg', 'apache/hudi','apache/paimon','delta-io/delta']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-04','2025-04']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.STARS]}
+  names={['open-metadata/OpenMetadata', 'datahub-project/datahub', 'apache/gravitino', 'unitycatalog/unitycatalog', 'apache/iceberg', 'apache/hudi','apache/paimon','delta-io/delta']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-04','2025-04']}
+/>
+
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['apache/iceberg', 'apache/hudi', 'apache/paimon','delta-io/delta']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2020Q1','2025Q1']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={[ 'open-metadata/OpenMetadata', 'datahub-project/datahub', 'apache/gravitino', 'unitycatalog/unitycatalog']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2020Q1','2025Q1']}
+/>
+
+
+
+
+#### 5. 向量存储和索引
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['milvus-io/milvus','weaviate/weaviate', 'chroma-core/chroma','qdrant/qdrant', 'pgvector/pgvector']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.STARS]}
+  names={['milvus-io/milvus','weaviate/weaviate', 'chroma-core/chroma','qdrant/qdrant', 'pgvector/pgvector']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+
+{/*
+'elastic/elasticsearch', 'opensearch-project/OpenSearch'
+1. Training - LLM 分布式训练框架 - DeepSpeed
+2. Fine-tuning - 调优框架 - llama-factory
+3. Computing - 计算引擎 - Ray
+4. Model Serving - 部署推理服务 - ollama，vLLM
+6. Agent -（效率+代码）工具 - OpenHands
+5. Agent Framework - 应用编排框架 - AutoGPT, MetaGPT
+7. RAG(RAG, GraphRAG, AgenticRAG-OpenAI.Deepsearch) & Knowledge base - 知识库语料管理- langchain, llama_index, fastgpt, searxng/searxng, deepsearch
+8. Vector Storage - 向量存储 - Milvus
+9. Table Format - 表格式 - Iceberg
+10. Unity Catalog - 元数据格式 - OpenMetadata
+11. Model Context Protocal - 模型通讯协议 - modelcontextprotocol/servers
+12. Model Distribution - 模型镜像分发 - CloudNativeAI/model-spec */}
+
+
+#### 6. 模型服务（推理、部署）
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['vllm-project/vllm', 'sgl-project/sglang','ollama/ollama', 'ggml-org/llama.cpp', 'kvcache-ai/ktransformers']}
+  timeUnit={TimeUnit.MONTH}
+  timeSpan={['2023-04','2025-04']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.STARS]}
+  names={['vllm-project/vllm', 'sgl-project/sglang', 'openvinotoolkit/openvino','ggml-org/llama.cpp', 'microsoft/onnxruntime', 'NVIDIA/TensorRT-LLM', 'kvcache-ai/ktransformers', 'InternLM/lmdeploy', 'huggingface/text-generation-inference']}
+  timeUnit={TimeUnit.MONTH}
+  timeSpan={['2023-04','2025-04']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['ollama/ollama', 'xorbitsai/inference', 'triton-inference-server/server', 'ai-dynamo/dynamo', 'bentoml/OpenLLM', 'kvcache-ai/Mooncake']}
+  timeUnit={TimeUnit.MONTH}
+  timeSpan={['2023-01','2025-03']}
+/>
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.STARS]}
+  names={['ollama/ollama', 'xorbitsai/inference', 'triton-inference-server/server', 'ai-dynamo/dynamo', 'bentoml/OpenLLM', 'kvcache-ai/Mooncake']}
+  timeUnit={TimeUnit.QUARTER}
+  timeSpan={['2023-01','2025Q1']}
+/>
+
+#### 7. 训练生态
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['pytorch/pytorch', 'PaddlePaddle/Paddle', 'tensorflow/tensorflow', 'jax-ml/jax', 'BVLC/caffe', 'apache/mxnet']}
+  timeUnit={TimeUnit.YEAR}
+  timeSpan={['2017','2024']}
+/>
+
+
