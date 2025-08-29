@@ -12,6 +12,16 @@ import {
 } from './_charts/AIEcosystemCorrelationCharts';
 
 
+### vLLM & SGLang 专题
+
+<OpenDiggerLineChart
+  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
+  names={['vllm-project/vllm', 'sgl-project/sglang']}
+  timeUnit={TimeUnit.MONTH}
+  timeSpan={['2023-04','2025-09']}
+/>
+
+
 # 2025-05 LLM Landscape
 
 > #### 基于社区数据在 LLM & CNAI & Data4AI 领域 Landscape 初步洞察结果展示。
@@ -210,13 +220,4 @@ names={['ItzCrazyKns/Perplexica', 'zaidmukaddam/scira','leptonai/search_with_lep
   names={['deepseek-ai/FlashMLA', 'deepseek-ai/DeepEP', 'deepseek-ai/DeepGEMM', 'deepseek-ai/DualPipe', 'deepseek-ai/EPLB','deepseek-ai/3FS']}
   timeUnit={TimeUnit.MONTH}
   timeSpan={['2025-02','2025-08']}
-/>
-
-### vLLM & SGLang 专题
-
-<OpenDiggerLineChart
-  type={[MetricCategory.REPOSITORY, RepositoryMetricType.OPENRANK]}
-  names={['vllm-project/vllm', 'sgl-project/sglang']}
-  timeUnit={TimeUnit.MONTH}
-  timeSpan={['2023-04','2025-09']}
 />
