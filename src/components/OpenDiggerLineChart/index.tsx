@@ -31,7 +31,7 @@ const OpenDiggerLineChart: React.FC<OpenDiggerLineChartProps> = ({ type, names, 
       name,
       data: values,
       type: 'line',
-      showSymbol: false,
+      showSymbol: true,
       itemStyle: { color: colorPalette[index % (colorPalette.length - 1)] },
       smooth: true,
       // endLabel: {
